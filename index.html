@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forsyth Plumbing Consultants | Whakatane Plumber</title>
+<style>
+  :root {
+    --color-primary: #e30000;      /* logo red */
+    --color-primary-light: #ff2e2e;
+    --color-accent: #ff7b00;       /* logo orange */
+    --color-bg: #f7f8fa;
+    --color-white: #ffffff;
+    --color-text: #2b2b2b;
+    --color-text-light: #5a5a5a;
+    --font-heading: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Segoe UI', Arial, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  header p.tagline {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    color: #ffd9c2;
+    font-weight: 300;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(27, 58, 92, 0.12);
+    max-width: 560px;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border-top: 5px solid var(--color-accent);
+  }
+
+  .card h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-box {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background-color: var(--color-bg);
+    border-radius: 8px;
+  }
+
+  .contact-box h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-item {
+    display: block;
+    margin: 0.4rem 0;
+    font-size: 1rem;
+  }
+
+  .contact-item a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-item a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.2rem 1rem;
+    background-color: var(--color-primary);
+    color: #ffd9c2;
+    font-size: 0.85rem;
+  }
+
+  footer a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.4rem;
+    }
+    .card {
+      padding: 2rem 1.25rem;
+    }
+    .card h2 {
+      font-size: 1.25rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Forsyth Plumbing Consultants</h1>
+    <p class="tagline">Whakatane Plumber &mdash; Plumbing, Gasfitting &amp; Drainlaying</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>We're Rebuilding Our Website</h2>
+      <p>
+        Our website is currently being rebuilt following a technical issue.
+        We apologise for any inconvenience and appreciate your patience while
+        we get things back up and running.
+      </p>
+      <p>
+        For plumbing, gasfitting, or drainlaying enquiries in Whakatane and the
+        Eastern Bay of Plenty, please get in touch with Duncan directly.
+      </p>
+
+      <div class="contact-box">
+        <h3>Contact Duncan</h3>
+        <span class="contact-item">📞 <a href="tel:+64272496646">027 249 6646</a></span>
+        <span class="contact-item">✉️ <a href="mailto:duncan@forsythplumbingconsultants.co.nz">duncan@forsythplumbingconsultants.co.nz</a></span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Forsyth Plumbing Consultants &mdash; Whakatane, New Zealand
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
